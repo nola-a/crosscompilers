@@ -20,7 +20,7 @@ GCC=13.2.0
 GLIBC=2.28
 CROSSC=/opt/pi-gcc-armv6
 
-echo "Install dependecies"
+echo "Install dependencies"
 sudo apt install build-essential gawk git texinfo bison rsync
 
 echo "Download software"
