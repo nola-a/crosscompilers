@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Raspberry Pi Zero armv8-a cross compiler (can easily be modified to support other targets)
+# Raspberry PiZero2 armv8-a cross compiler (can easily be modified to support other targets)
 
 # Useful links
 # http://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/
@@ -14,6 +14,8 @@
 # this issue could be solved static linking stdc++ and libgcc with the options -static-libstd -static-libgcc 
 # To reduce the size of the executable more options can be used:
 # $ /opt/pi-gcc-armv8-a/bin/arm-linux-gnueabihf-g++ -s -fdata-sections -ffunction-sections -static-libstdc++ -static-libgcc main.cpp -o a.out -Wl,--gc-sections
+
+set -e
 
 BINUTILS=2.30
 GCC=14.2.0

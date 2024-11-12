@@ -15,6 +15,8 @@
 # To reduce the size of the executable more options can be used:
 # $ /opt/pi-gcc-armv6/bin/arm-linux-gnueabihf-g++ -s -fdata-sections -ffunction-sections -static-libstdc++ -static-libgcc main.cpp -o a.out -Wl,--gc-sections
 
+set -e
+
 BINUTILS=2.30
 GCC=13.2.0
 GLIBC=2.28
